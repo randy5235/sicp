@@ -1,0 +1,1 @@
+Please create a folder with your initials and then a folder for each section eg. 1.x for all exercises in that range.
