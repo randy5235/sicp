@@ -1,5 +1,6 @@
-(define (sum x y) (+ x y))
-(define (sumLargest x y z)
-  (cond ((> x y) x)
-  )
-  
+(define (square x) (* x x))
+(define (sumOfSquare a b) (+ (square a) (square b)))
+(define (sumOfLargerSquares x y z)
+  (cond ((and (< x y) (< x z)) (sumOfSquare y z))
+        ((and (< x y) (> x z)) (sumOfSquare x y))
+        (else (sumOfSquare x y))))
